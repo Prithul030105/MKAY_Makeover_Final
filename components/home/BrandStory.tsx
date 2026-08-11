@@ -1,11 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle2 } from 'lucide-react'
+import { brand } from '@/lib/catalog'
 
 const points = [
-  'A curated catalogue of makeup boxes and artist cases',
+  'Manufacturing makeup boxes and artist cases in India since 2017',
   'Wholesale support for salons, artists and beauty businesses',
   'Custom colours, branding, dimensions and compartments',
+  'Pan-India delivery, direct from the manufacturer',
 ]
 
 export default function BrandStory() {
@@ -14,8 +16,8 @@ export default function BrandStory() {
       <div className="max-w-7xl mx-auto px-4 md:px-6 grid lg:grid-cols-[1.05fr_0.95fr] gap-10 lg:gap-16 items-center">
         <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] shadow-hover bg-white">
           <Image
-            src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1200&q=85"
-            alt="Premium makeup organizers and cosmetic products"
+            src="/Our_story.jpeg"
+            alt="MKAY MAKEOVER manufacturing and makeup boxes"
             fill
             className="object-cover"
             sizes="(max-width: 1024px) 100vw, 50vw"
@@ -24,14 +26,16 @@ export default function BrandStory() {
 
         <div>
           <p className="text-xs tracking-[0.22em] uppercase text-blush-600 font-semibold mb-3">
-            Built for beauty brands
+            India's First Manufacturer · Since {brand.established}
           </p>
           <h2 className="font-display text-4xl md:text-6xl leading-tight">
             Makeup boxes that make every beauty setup feel considered.
           </h2>
           <p className="mt-5 text-muted-foreground leading-relaxed">
-            MKAY MAKEOVER creates makeup boxes with a balance of practical organisation and soft, elevated styling.
-            Our collection is presented as a wholesale catalogue, making it easy for you to select a product or share a custom requirement.
+            MKAY MAKEOVER has been manufacturing makeup boxes from {brand.city} since {brand.established}, built on a
+            balance of practical organisation and soft, elevated styling. Founded by {brand.founders}, our collection
+            is presented as a wholesale catalogue, making it easy for you to select a product or share a custom
+            requirement — delivered pan-India, direct from the manufacturer.
           </p>
 
           <div className="mt-7 space-y-3">

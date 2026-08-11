@@ -12,12 +12,12 @@ export async function POST(request: NextRequest) {
     if (fields.some((field) => !String(body[field] || '').trim())) return NextResponse.json({ error: 'Please complete all required fields.' }, { status: 400 })
     if (!String(body.email).includes('@')) return NextResponse.json({ error: 'Please enter a valid email address.' }, { status: 400 })
 
-    const to = process.env.WHOLESALE_EMAIL_TO
+    const to = process.env.WHOLESALE_EMAIL_TO || 'mkayvanity@gmail.com'
     const host = process.env.SMTP_HOST
     const user = process.env.SMTP_USER
     const pass = process.env.SMTP_PASS
-    if (!to || !host || !user || !pass) {
-      console.error('Wholesale email is not configured. Set WHOLESALE_EMAIL_TO and SMTP_* variables.')
+    if (!host || !user || !pass) {
+      console.error('Wholesale email is not configured. Set SMTP_* variables.')
       return NextResponse.json({ error: 'The enquiry email service is not configured yet. Please contact us by WhatsApp.' }, { status: 503 })
     }
 

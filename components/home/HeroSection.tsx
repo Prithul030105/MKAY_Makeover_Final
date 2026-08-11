@@ -6,8 +6,10 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { ArrowRight, Boxes, MessageCircle } from 'lucide-react'
 
 const slides = [
+  { eyebrow: 'Custom wholesale orders', heading: 'Your Beauty Box, Your Signature.', sub: 'Choose a product code or describe your idea. We can help with colour, branding, finishes and box details for your wholesale requirement.', cta: 'Start a request', ctaHref: '/wholesale#inquiry', secondary: 'View makeup boxes', secondaryHref: '/products', image: '/main_home.jpeg' },
+  
   { eyebrow: 'MKAY MAKEOVER collection', heading: 'Makeup Boxes Made With A Little More Magic.', sub: 'Thoughtfully designed vanity boxes, travel cases and professional kits for makeup artists, salons and wholesale partners.', cta: 'Explore catalogue', ctaHref: '/products', secondary: 'Request wholesale details', secondaryHref: '/wholesale#inquiry', image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1800&q=85' },
-  { eyebrow: 'Custom wholesale orders', heading: 'Your Beauty Box, Your Signature.', sub: 'Choose a product code or describe your idea. We can help with colour, branding, finishes and box details for your wholesale requirement.', cta: 'Start a request', ctaHref: '/wholesale#inquiry', secondary: 'View makeup boxes', secondaryHref: '/products', image: 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=1800&q=85' },
+  
   { eyebrow: 'Made for professionals', heading: 'Designed To Keep Beauty Beautifully Organised.', sub: 'A modern collection of practical makeup boxes with refined finishes that look as good on the counter as they work in the kit.', cta: 'View designs', ctaHref: '/products', secondary: 'Talk to our team', secondaryHref: '/wholesale#inquiry', image: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1800&q=85' },
 ]
 

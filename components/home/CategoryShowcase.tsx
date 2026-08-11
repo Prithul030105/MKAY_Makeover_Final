@@ -41,7 +41,7 @@ export default function CategoryShowcase() {
                 )}
               </div>
               <h3 className="mt-3 text-sm font-semibold leading-snug">{category.name}</h3>
-              <p className="text-xs text-muted-foreground mt-1">{category._count?.products ?? 0} designs</p>
+              {/* <p className="text-xs text-muted-foreground mt-1">{category._count?.products ?? 0} designs</p> */}
             </Link>
           ))}
         </div>

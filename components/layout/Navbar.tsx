@@ -10,7 +10,7 @@ import { cn } from '@/lib/utils'
 const productLinks = [
   { label: 'Vanity Makeup Boxes', href: '/products?category=vanity-makeup-boxes' },
   { label: 'Travel Makeup Cases', href: '/products?category=travel-makeup-cases' },
-  { label: 'Professional Artist Kits', href: '/products?category=professional-artist-kits' },
+  // { label: 'Professional Artist Kits', href: '/products?category=professional-artist-kits' },
   { label: 'Custom Makeup Boxes', href: '/products?category=custom-makeup-boxes' },
 ]
 
