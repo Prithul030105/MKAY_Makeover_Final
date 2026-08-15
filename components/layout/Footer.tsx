@@ -13,7 +13,7 @@ export default function Footer() {
     </div>
     <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:px-6 md:py-16 lg:grid-cols-[1.1fr_1.4fr]">
       <div>
-        <Link href="/" className="mb-5 inline-flex items-center gap-2.5"><div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-blush-600 font-display font-bold text-white">M</div><div><p className="font-display text-2xl font-bold">{brand.shortName}</p><p className="-mt-1 text-[10px] uppercase tracking-[0.22em] text-background/45">Makeover</p></div></Link>
+        <Link href="/" className="mb-5 inline-flex items-center gap-2.5"><div className="relative flex h-10 w-10 items-center justify-center rounded-2xl bg-blush-600 font-display font-bold text-white">M<span className="absolute -right-1.5 -top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-background text-[9px] font-bold text-foreground">®</span></div><div><p className="font-display text-2xl font-bold">{brand.shortName}</p><p className="-mt-1 text-[10px] uppercase tracking-[0.22em] text-background/45">Makeover</p></div></Link>
         <p className="max-w-md text-sm leading-relaxed text-background/62">{brand.tagline}. Manufacturing from {brand.city} since {brand.established}, with pan-India delivery. Explore the catalogue and send us the product code for wholesale details or a custom request.</p>
         <div className="mt-6 space-y-3 text-sm">
           <a href={`tel:${brand.phone.replace(/\s/g, '')}`} className="flex items-center gap-2 text-background/70 transition-colors hover:text-background"><Phone size={15} className="text-blush-300" />Call: {brand.phone}</a>
