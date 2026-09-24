@@ -1,6 +1,6 @@
 # MKAY MAKEOVER
 
-A responsive wholesale product showcase for makeup boxes. There is no cart, checkout, account or online payment flow.
+A responsive wholesale product showcase for makeup boxes. 
 
 ## Update the products and contact details
 
